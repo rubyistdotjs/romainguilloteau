@@ -1,0 +1,41 @@
+<script lang="ts">
+  import { GithubIcon, LinkedinIcon } from "svelte-feather-icons";
+
+  import Section from "./Section.svelte";
+  import IconLink from "./IconLink.svelte";
+</script>
+
+<Section>
+  <div class="xl:w-10/12 2xl:w-8/12 mb-16">
+    <h1
+      class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-none mb-8 lg:mb-12"
+    >
+      Romain Guilloteau
+      <span class="block text-indigo-600 mt-2">
+        Senior Full Stack Developer
+      </span>
+    </h1>
+    <p class="md:text-lg text-gray-700 leading-relaxed mb-12">
+      I've spent more than a decade working at startups and small businesses.
+      <br />
+      From Social media to job hunting, from neobank to maritime logistics and from
+      sole developer to lead engineer in a fast growing company. My experiences varied
+      wildly and allowed me to discover every facet of the technical and human side
+      of the trade.
+    </p>
+    <div class="flex flex-row">
+      <IconLink
+        href="https://github.com/rubyistdotjs"
+        title="Visit my Github profile"
+      >
+        <GithubIcon size="20" />
+      </IconLink>
+      <IconLink
+        href="https://www.linkedin.com/in/romainguilloteau/"
+        title="Visit my LinkedIn profile"
+      >
+        <LinkedinIcon size="20" />
+      </IconLink>
+    </div>
+  </div>
+</Section>

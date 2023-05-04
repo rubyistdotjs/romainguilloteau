@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Languages",
+    "entries": [
+      {
+        "name": "Ruby",
+        "comment": "Fell in love with it in my teenage years, it's a daily ever since."
+      },
+      {
+        "name": "JavaScript & TypeScript",
+        "comment": "Started in the jQuery / Mootools era and followed along the insane rise of this language."
+      },
+      {
+        "name": "Go",
+        "comment": "A fairly recent discovery, it's an awesome language to build microservices."
+      }
+    ]
+  },
+  {
+    "name": "Libraries & Frameworks",
+    "entries": [
+      {
+        "name": "Ruby on Rails",
+        "comment": "Obviously being a Ruby enthusiast, every single company I've worked at had a Rails monolith."
+      },
+      {
+        "name": "Hanami",
+        "comment": "I love what they did in version 2, an amazing framework for Ruby microservices."
+      },
+      {
+        "name": "React",
+        "comment": "Briefly worked with Vue which is cool as well."
+      },
+      {
+        "name": "Node.js & Express",
+        "comment": "It used to be a daily, I've built complex services with this two."
+      },
+      {
+        "name": "tailwindcss",
+        "comment": "All my personal projects includes it, I love tailwind to death."
+      }
+    ]
+  },
+  {
+    "name": "Ops and Databases",
+    "entries": [
+      {
+        "name": "AWS",
+        "comment": "in most my jobs we started with Heroku and ended up on AWS."
+      },
+      {
+        "name": "PostgreSQL",
+        "comment": "my database of choice."
+      },
+      {
+        "name": "Redis",
+        "comment": "believe it or not, I worked on projects were this was the main DB."
+      },
+      {
+        "name": "Docker",
+        "comment": ""
+      }
+    ]
+  },
+  {
+    "name": "Misc",
+    "entries": [
+      {
+        "name": "VSCode",
+        "comment": null
+      },
+      {
+        "name": "Firefox",
+        "comment": ""
+      },
+      {
+        "name": "Notion",
+        "comment": ""
+      },
+      {
+        "name": "Figma",
+        "comment": ""
+      }
+    ]
+  }
+]

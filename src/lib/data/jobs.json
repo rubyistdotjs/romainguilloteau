@@ -1,0 +1,38 @@
+[
+  {
+    "company": "BuyCo",
+    "logo": "buyco.png",
+    "url": "https://buyco.co/",
+    "startDate": "2021-06-01",
+    "endDate": null,
+    "title": "Lead Software Engineer - Backend Software Engineer",
+    "summary": "Originally brought in for my expertise on projects architecture, Ruby on Rails and to enforce good practices, I'm now the lead of a team dedicated to the public APIs and shipment tracking."
+  },
+  {
+    "company": "Swile",
+    "logo": "swile-logo.png",
+    "url": "https://www.swile.co/",
+    "startDate": "2018-11-01",
+    "endDate": "2021-05-30",
+    "title": "Innovation Team Leader - Software Engineer",
+    "summary": "I worked on the food delivery platform when the company was named Lunchr. When it shifted to a neobank, I worked on the affiliates side and payment networks, of which I became a lead."
+  },
+  {
+    "company": "Codeur",
+    "logo": "codeur.png",
+    "url": "https://www.codeur.com/",
+    "startDate": "2015-01-01",
+    "endDate": "2018-09-30",
+    "title": "Lead Developer and Software Architect",
+    "summary": "I built Graphiste.com, a designer job board, and Facture.net, an invoicing tool, from the ground up and worked on some major features and rewrites for their other websites."
+  },
+  {
+    "company": "1Year1Book",
+    "logo": "1year1book.png",
+    "url": "https://www.1year1book.com/",
+    "startDate": "2013-03-01",
+    "endDate": "2014-08-31",
+    "title": "Lead Developer",
+    "summary": "I created from scratch the version 2 of their SaaS social network, aswell as the front facing website and internal tools used to boot and configure an instance and to monitor each of them."
+  }
+]

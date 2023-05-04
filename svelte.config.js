@@ -1,0 +1,30 @@
+import adapter from "@sveltejs/adapter-netlify";
+import sveltePreprocess from "svelte-preprocess";
+import importAssets from "svelte-preprocess-import-assets";
+import { preprocess } from "svelte/compiler";
+
+/**
+ * @typedef {import("svelte/types/compiler/preprocess").PreprocessorGroup} PreprocessorGroup
+ * @param {PreprocessorGroup[]} preprocessors
+ * @returns {PreprocessorGroup[]}
+ */
+function sequence(preprocessors) {
+  return preprocessors.map((preprocessor) => ({
+    markup({ content, filename }) {
+      return preprocess(content, preprocessor, { filename });
+    },
+  }));
+}
+
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+  // Consult https://github.com/sveltejs/svelte-preprocess
+  // for more information about preprocessors
+  preprocess: sequence([sveltePreprocess(), importAssets()]),
+
+  kit: {
+    adapter: adapter(),
+  },
+};
+
+export default config;
