@@ -5,5 +5,3 @@ export const load = (async ({ fetch }) => {
   const books = await res.json();
   return { books };
 }) satisfies PageLoad;
-
-export const prerender = true;
