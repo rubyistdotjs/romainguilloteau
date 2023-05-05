@@ -12,7 +12,7 @@
     >
       Romain Guilloteau
       <span class="block text-indigo-600 mt-2">
-        Senior Full Stack Developer
+        Senior Full Stack Engineer
       </span>
     </h1>
     <p class="md:text-lg text-gray-700 leading-relaxed mb-12">

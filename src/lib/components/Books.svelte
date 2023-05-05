@@ -1,7 +1,7 @@
 <script lang="ts">
   import Section from "./Section.svelte";
 
-  export let books: any;
+  export let shelves: any;
 
   function shelfTitle(name: string) {
     return name === "currently-reading"
@@ -18,7 +18,7 @@
 
 <Section title="Library">
   <div class="grid grid-cols-1 xl:grid-cols-3 gap-14">
-    {#each books as shelf}
+    {#each shelves as shelf}
       <div>
         <h3 class="text-gray-500 font-medium leading-none mb-8">
           {shelfTitle(shelf.shelf)}
@@ -34,7 +34,9 @@
               <div class="w-12 h-full mr-3 flex-shrink-0">
                 <img
                   src={book.cover_url}
-                  alt=""
+                  alt={`Cover of the book "${titleWithoutSubtitle(
+                    book.title,
+                  )}"`}
                   class="w-full h-auto rounded"
                 />
               </div>

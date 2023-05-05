@@ -20,7 +20,10 @@ function sequence(preprocessors) {
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
-  preprocess: sequence([sveltePreprocess(), importAssets()]),
+  preprocess: sequence([
+    sveltePreprocess({ preserve: ["ld+json"] }),
+    importAssets(),
+  ]),
 
   kit: {
     adapter: adapter(),
