@@ -9,27 +9,3 @@
 [functions]
   directory = "netlify/functions/handlers"
   node_bundler = "esbuild"
-
-[[redirects]]
-  from = "https://romainguilloteau.netlify.com/*"
-  to = "https://romainguilloteau.dev/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://romainguilloteau.netlify.com/*"
-  to = "https://romainguilloteau.dev/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://romainguilloteau.com/*"
-  to = "https://romainguilloteau.dev/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://romainguilloteau.fr/*"
-  to = "https://romainguilloteau.dev/:splat"
-  status = 301
-  force = true
