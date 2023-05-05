@@ -1,7 +1,7 @@
 [
   {
     "company": "BuyCo",
-    "logo": "buyco.png",
+    "logo": "buyco.webp",
     "url": "https://buyco.co/",
     "startDate": "2021-06-01",
     "endDate": null,
@@ -10,7 +10,7 @@
   },
   {
     "company": "Swile",
-    "logo": "swile-logo.png",
+    "logo": "swile.webp",
     "url": "https://www.swile.co/",
     "startDate": "2018-11-01",
     "endDate": "2021-05-30",
@@ -19,7 +19,7 @@
   },
   {
     "company": "Codeur",
-    "logo": "codeur.png",
+    "logo": "codeur.webp",
     "url": "https://www.codeur.com/",
     "startDate": "2015-01-01",
     "endDate": "2018-09-30",
@@ -28,7 +28,7 @@
   },
   {
     "company": "1Year1Book",
-    "logo": "1year1book.png",
+    "logo": "1year1book.webp",
     "url": "https://www.1year1book.com/",
     "startDate": "2013-03-01",
     "endDate": "2014-08-31",
