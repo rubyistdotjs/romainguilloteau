@@ -42,7 +42,7 @@ interface GoodreadsAuthor {
 
 export interface ShelfBook {
   id: number;
-  cover_url: string;
+  coverUrl: string;
   title: string;
   author: string;
   link: string;
@@ -56,7 +56,7 @@ const formatBook = (review: GoodreadsReview): ShelfBook => {
 
   return {
     id: book.id,
-    cover_url: book.image_url,
+    coverUrl: book.image_url,
     title: book.title_without_series,
     author: author.name,
     link: book.link,

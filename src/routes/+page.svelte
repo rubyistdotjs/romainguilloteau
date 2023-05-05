@@ -2,7 +2,7 @@
   import Hero from "$lib/components/Hero.svelte";
   import Experiences from "$lib/components/experiences/Experiences.svelte";
   import Stacks from "$lib/components/Stacks.svelte";
-  import Books from "$lib/components/Books.svelte";
+  import Shelves from "$lib/components/books/Shelves.svelte";
 
   import type { PageData } from "./$types";
 
@@ -65,4 +65,4 @@
 <Hero />
 <Experiences />
 <Stacks />
-<Books shelves={data.books} />
+<Shelves shelves={data.books} />

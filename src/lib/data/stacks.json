@@ -4,7 +4,7 @@
     "entries": [
       {
         "name": "Ruby",
-        "comment": "Fell in love with it in my teenage years, it's a daily ever since."
+        "comment": "Fell in love with it in my teenage years when I got sick of PHP, it's a daily ever since."
       },
       {
         "name": "JavaScript & TypeScript",
@@ -12,7 +12,7 @@
       },
       {
         "name": "Go",
-        "comment": "A fairly recent discovery, it's an awesome language to build microservices."
+        "comment": "A fairly recent discovery, an awesome language to build microservices."
       }
     ]
   },
@@ -21,15 +21,15 @@
     "entries": [
       {
         "name": "Ruby on Rails",
-        "comment": "Obviously being a Ruby enthusiast, every single company I've worked at had a Rails monolith."
+        "comment": "Obviously being a Ruby enthusiast. Every single of my job experience was dealing with a Rails monolith."
       },
       {
         "name": "Hanami",
-        "comment": "I love what they did in version 2, an amazing framework for Ruby microservices."
+        "comment": "I love what they did in version 2, a perfect framework for building small Ruby services."
       },
       {
         "name": "React",
-        "comment": "Briefly worked with Vue which is cool as well."
+        "comment": "In itself a brilliant library, the clutter of hype driven packages surrounding it is unbearable though."
       },
       {
         "name": "Node.js & Express",
@@ -42,44 +42,23 @@
     ]
   },
   {
-    "name": "Ops and Databases",
-    "entries": [
-      {
-        "name": "AWS",
-        "comment": "in most my jobs we started with Heroku and ended up on AWS."
-      },
-      {
-        "name": "PostgreSQL",
-        "comment": "my database of choice."
-      },
-      {
-        "name": "Redis",
-        "comment": "believe it or not, I worked on projects were this was the main DB."
-      },
-      {
-        "name": "Docker",
-        "comment": ""
-      }
-    ]
-  },
-  {
     "name": "Misc",
     "entries": [
       {
         "name": "VSCode",
-        "comment": null
+        "comment": "I've tried some IDEs but never could get used to it."
+      },
+      {
+        "name": "Docker",
+        "comment": "I do not miss the times where we had to install everything on our machine and juggle between multiple versions."
+      },
+      {
+        "name": "Redis",
+        "comment": "Obviously I'm well versed in the classic like psql but I must make a special mention, always a joy to work with."
       },
       {
         "name": "Firefox",
-        "comment": ""
-      },
-      {
-        "name": "Notion",
-        "comment": ""
-      },
-      {
-        "name": "Figma",
-        "comment": ""
+        "comment": "Everywhere forever."
       }
     ]
   }

@@ -4,7 +4,7 @@
   import stacks from "$lib/data/stacks.json";
 </script>
 
-<Section title="Stacks">
+<Section title="Stack">
   <div class="">
     {#each stacks as stack}
       <div class="border-l border-gray-100 pl-6">

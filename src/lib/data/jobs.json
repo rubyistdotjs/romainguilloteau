@@ -15,7 +15,7 @@
     "startDate": "2018-11-01",
     "endDate": "2021-05-30",
     "title": "Innovation Team Leader - Software Engineer",
-    "summary": "I worked on the food delivery platform when the company was named Lunchr. When it shifted to a neobank, I worked on the affiliates side and payment networks, of which I became a lead."
+    "summary": "I worked on the food delivery platform when the company was named Lunchr. When it shifted to a neobank, I moved on the affiliates side and payment networks, of which I became a lead."
   },
   {
     "company": "Codeur",
@@ -24,7 +24,7 @@
     "startDate": "2015-01-01",
     "endDate": "2018-09-30",
     "title": "Lead Developer and Software Architect",
-    "summary": "I built Graphiste.com, a designer job board, and Facture.net, an invoicing tool, from the ground up and worked on some major features and rewrites for their other websites."
+    "summary": "I built Graphiste.com (a designer job board) and Facture.net (an invoicing tool) from the ground up and implemented some major features and rewrites for their other websites."
   },
   {
     "company": "1Year1Book",
@@ -33,6 +33,6 @@
     "startDate": "2013-03-01",
     "endDate": "2014-08-31",
     "title": "Lead Developer",
-    "summary": "I created from scratch the version 2 of their SaaS social network, aswell as the front facing website and internal tools used to boot and configure an instance and to monitor each of them."
+    "summary": "I created from scratch the new version of their SaaS social network, aswell as the front facing website and internal tools used to boot and configure an instance and to monitor each of them."
   }
 ]

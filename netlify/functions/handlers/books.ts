@@ -17,7 +17,7 @@ export const handler: Handler = async function (event) {
   const shelvesWithBooks = await Promise.all(
     filteredShelves.map(async (shelf) => {
       const books = await retrieveShelfBooks({ shelf: shelf.name });
-      return { shelf: shelf.name, books };
+      return { shelfName: shelf.name, booksCount: shelf.book_count, books };
     }),
   );
 
