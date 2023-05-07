@@ -2,7 +2,8 @@
   import { GithubIcon, LinkedinIcon } from "svelte-feather-icons";
 
   import Section from "./Section.svelte";
-  import IconLink from "./IconLink.svelte";
+  import Button from "./Button.svelte";
+  import ButtonGroup from "./ButtonGroup.svelte";
 </script>
 
 <Section>
@@ -23,19 +24,19 @@
       wildly and allowed me to discover every facet of the technical and human side
       of the trade.
     </p>
-    <div class="flex flex-row">
-      <IconLink
+    <ButtonGroup>
+      <Button
         href="https://github.com/rubyistdotjs"
         title="Visit my Github profile"
       >
         <GithubIcon size="20" />
-      </IconLink>
-      <IconLink
+      </Button>
+      <Button
         href="https://www.linkedin.com/in/romainguilloteau/"
         title="Visit my LinkedIn profile"
       >
         <LinkedinIcon size="20" />
-      </IconLink>
-    </div>
+      </Button>
+    </ButtonGroup>
   </div>
 </Section>
