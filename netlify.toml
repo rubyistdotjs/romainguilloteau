@@ -5,7 +5,3 @@
 [dev]
   command = "npm run dev"
   framework = "vite"
-
-[functions]
-  directory = "netlify/functions/handlers"
-  node_bundler = "esbuild"

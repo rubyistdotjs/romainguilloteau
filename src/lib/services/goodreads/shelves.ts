@@ -1,6 +1,6 @@
-import { retrieve } from "./api";
+import { PUBLIC_GOODREADS_USER_ID } from "$env/static/public";
 
-const { GOODREADS_USER_ID } = process.env;
+import { retrieve } from "./api";
 
 interface GoodreadsShelves {
   shelves: {
@@ -19,7 +19,7 @@ export interface Shelf {
 
 export const retrieveShelves = async () => {
   const res = await retrieve<GoodreadsShelves>("shelf/list.xml", {
-    params: { user_id: GOODREADS_USER_ID },
+    user_id: PUBLIC_GOODREADS_USER_ID,
   });
 
   return res.shelves.user_shelf;

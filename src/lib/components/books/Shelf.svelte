@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { PUBLIC_GOODREADS_USER_ID } from "$env/static/public";
   import { ExternalLinkIcon } from "svelte-feather-icons";
   import Book from "./Book.svelte";
 
@@ -23,7 +24,7 @@
   }
 
   function shelfUrl(name: string) {
-    return `https://www.goodreads.com/review/list/${process.env.GOODREADS_USER_ID}?shelf=${name}&per_page=100`;
+    return `https://www.goodreads.com/review/list/${PUBLIC_GOODREADS_USER_ID}?shelf=${name}&per_page=100`;
   }
 </script>
 
@@ -33,7 +34,7 @@
   </h3>
 
   {#each books as book}
-    <Book {...book} />
+    <Book title={book.title} author={book.author} coverUrl={book.coverUrl} />
   {/each}
 
   {#if booksOverflow > 0}

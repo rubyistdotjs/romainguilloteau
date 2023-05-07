@@ -1,6 +1,6 @@
-import { retrieve } from "./api";
+import { PUBLIC_GOODREADS_USER_ID } from "$env/static/public";
 
-const { GOODREADS_USER_ID } = process.env;
+import { retrieve } from "./api";
 
 interface GoodreadsReviews {
   reviews: {
@@ -40,7 +40,7 @@ interface GoodreadsAuthor {
   link: string;
 }
 
-export interface ShelfBook {
+export interface Book {
   id: number;
   coverUrl: string;
   title: string;
@@ -48,7 +48,7 @@ export interface ShelfBook {
   link: string;
 }
 
-const formatBook = (review: GoodreadsReview): ShelfBook => {
+const formatBook = (review: GoodreadsReview): Book => {
   const { book } = review;
   const author = Array.isArray(book.authors.author)
     ? book.authors.author[0]
@@ -77,15 +77,13 @@ export const retrieveShelfBooks = async ({
   page?: number;
 }) => {
   const res = await retrieve<GoodreadsReviews>("review/list", {
-    params: {
-      v: "2",
-      shelf,
-      sort,
-      order,
-      page,
-      per_page,
-      id: GOODREADS_USER_ID,
-    },
+    v: "2",
+    shelf,
+    sort,
+    order,
+    page,
+    per_page,
+    id: PUBLIC_GOODREADS_USER_ID,
   });
 
   const { review } = res.reviews;

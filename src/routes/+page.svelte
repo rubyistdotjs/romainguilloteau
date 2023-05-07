@@ -65,4 +65,4 @@
 <Hero />
 <Experiences />
 <Stacks />
-<Shelves shelves={data.books} />
+<Shelves shelves={data.shelves} />
