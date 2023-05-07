@@ -41,7 +41,7 @@
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      class="inline-block text-gray-500 text-sm hover:text-indigo-600 mt-8"
+      class="inline-block text-gray-500 text-sm hover:text-indigo-600 mt-3"
     >
       ... and {booksOverflow} more
       <ExternalLinkIcon size="13" class="inline-block align-middle ml-1" />
