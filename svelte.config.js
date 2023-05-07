@@ -1,6 +1,6 @@
 import adapter from "@sveltejs/adapter-netlify";
 import sveltePreprocess from "svelte-preprocess";
-import importAssets from "svelte-preprocess-import-assets";
+import { importAssets } from "svelte-preprocess-import-assets";
 import { preprocess } from "svelte/compiler";
 
 /**
