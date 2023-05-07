@@ -19,9 +19,11 @@
     />
   </div>
   <div>
-    <h4 class="text-gray-900 font-semibold leading-snug line-clamp-1">
+    <h4
+      class="text-gray-900 dark:text-gray-50 font-semibold leading-snug line-clamp-1"
+    >
       {shortTitle}
     </h4>
-    <span class="text-gray-500">{author}</span>
+    <span class="text-gray-500 dark:text-gray-400">{author}</span>
   </div>
 </div>

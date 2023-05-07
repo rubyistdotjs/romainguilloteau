@@ -29,7 +29,7 @@
 </script>
 
 <div>
-  <h3 class="text-gray-500 font-medium leading-none mb-8">
+  <h3 class="text-gray-500 dark:text-gray-400 font-medium leading-none mb-8">
     {title}
   </h3>
 
@@ -42,7 +42,7 @@
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      class="inline-block text-gray-500 text-sm hover:text-indigo-600 mt-3"
+      class="inline-block text-gray-500 dark:text-gray-400 text-sm hover:text-indigo-600 dark:hover:text-indigo-500 mt-3"
     >
       ... and {booksOverflow} more
       <ExternalLinkIcon size="13" class="inline-block align-middle ml-1" />

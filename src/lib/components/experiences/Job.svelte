@@ -41,32 +41,32 @@
   <div class="flex-1">
     <div class="flex flex-row items-center mb-2">
       <h3
-        class="text-gray-900 text-lg md:text-xl font-semibold leading-none mr-3"
+        class="text-gray-900 dark:text-gray-50 text-lg md:text-xl font-semibold leading-none mr-3"
       >
         {job.company}
       </h3>
       {#if job.endDate}
         <span
-          class="text-xs font-medium leading-none bg-gray-200 text-gray-700 rounded-full px-2 py-1"
+          class="text-xs font-medium leading-none bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full px-2 py-1"
         >
           {yearsCount} years
         </span>
       {:else}
         <span
-          class="text-xs font-medium leading-none bg-indigo-200 text-indigo-900 rounded-full px-2 py-1"
+          class="text-xs font-medium leading-none bg-indigo-200 dark:bg-indigo-900 text-indigo-900 dark:text-indigo-200 rounded-full px-2 py-1"
         >
           {yearsCount} years
         </span>
       {/if}
     </div>
-    <span class="block text-gray-800">{job.title}</span>
-    <p class="text-gray-700 my-4">{job.summary}</p>
+    <span class="block text-gray-800 dark:text-gray-200">{job.title}</span>
+    <p class="text-gray-700 dark:text-gray-400 my-4">{job.summary}</p>
     <a
       href={job.url}
       title={`Visit ${job.company}'s website`}
       target="_blank"
       rel="noopener noreferrer"
-      class="text-gray-500 text-sm hover:text-indigo-600"
+      class="text-gray-500 dark:text-gray-400 text-sm hover:text-indigo-600 dark:hover:text-indigo-500"
     >
       <LinkIcon size="14" class="inline-block mr-1" />
       {domain}
