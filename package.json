@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite dev",
-    "ntl-dev": "netlify dev",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -12,8 +11,6 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@netlify/functions": "^1.2.0",
-    "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/adapter-netlify": "^2.0.0",
     "@sveltejs/kit": "^1.0.0",
     "@types/cookie": "^0.5.1",
@@ -25,7 +22,6 @@
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^4.0.0",
-    "netlify-cli": "^15.0.0",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
     "prettier-plugin-svelte": "^2.7.0",
@@ -33,7 +29,6 @@
     "svelte-check": "^3.0.0",
     "svelte-feather-icons": "^4.0.0",
     "svelte-preprocess": "^5.0.0",
-    "svelte-preprocess-import-assets": "^1.0.0",
     "tailwindcss": "^3.0.24",
     "tslib": "^2.3.1",
     "typescript": "^5.0.0",

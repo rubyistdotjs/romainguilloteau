@@ -1,6 +1,5 @@
 import adapter from "@sveltejs/adapter-netlify";
 import sveltePreprocess from "svelte-preprocess";
-import { importAssets } from "svelte-preprocess-import-assets";
 import { preprocess } from "svelte/compiler";
 
 /**
@@ -20,10 +19,7 @@ function sequence(preprocessors) {
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
-  preprocess: sequence([
-    sveltePreprocess({ preserve: ["ld+json"] }),
-    importAssets(),
-  ]),
+  preprocess: sequence([sveltePreprocess({ preserve: ["ld+json"] })]),
 
   kit: {
     adapter: adapter(),

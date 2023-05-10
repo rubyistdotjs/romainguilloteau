@@ -16,7 +16,7 @@
 
 <Section>
   <h1
-    class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 leading-none mb-8 lg:mb-12"
+    class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-8 lg:mb-12"
   >
     {#if $page.status === 404}
       Page not found

@@ -9,7 +9,7 @@
 <Section>
   <div class="xl:w-10/12 2xl:w-8/12">
     <h1
-      class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 leading-none mb-8 lg:mb-12"
+      class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-8 lg:mb-12"
     >
       Romain Guilloteau
       <span class="block text-indigo-600 dark:text-indigo-500 mt-2">
