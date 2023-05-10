@@ -17,7 +17,7 @@
       </span>
     </h1>
     <p
-      class="md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-12"
+      class="md:text-lg text-gray-800 dark:text-gray-200 leading-relaxed mb-12"
     >
       I've spent more than a decade working at startups and small businesses.
       <br />

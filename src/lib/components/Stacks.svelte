@@ -9,7 +9,7 @@
     <div class="border-l border-gray-100 dark:border-gray-900 pl-6 mb-16">
       <div class="grid grid-cols-1 md:grid-cols-4">
         <h3
-          class="text-gray-800 dark:text-gray-400 text-sm font-medium leading-none mb-8"
+          class="text-gray-800 dark:text-gray-100 text-sm font-medium leading-none mb-8"
         >
           {stack.name}
         </h3>

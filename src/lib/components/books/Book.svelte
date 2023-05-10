@@ -20,7 +20,7 @@
   </div>
   <div>
     <h4
-      class="text-gray-800 dark:text-gray-50 font-semibold leading-snug line-clamp-1"
+      class="text-gray-800 dark:text-gray-100 font-semibold leading-snug line-clamp-1"
     >
       {shortTitle}
     </h4>
