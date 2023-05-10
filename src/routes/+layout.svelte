@@ -5,7 +5,7 @@
 </script>
 
 <main>
-  <div class="container mx-auto px-8 py-4 text-right">
+  <div class="container mx-auto px-8 pt-4 text-right">
     <DarkModeButton />
   </div>
   <slot />
