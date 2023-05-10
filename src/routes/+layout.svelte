@@ -1,9 +1,12 @@
 <script lang="ts">
+  import DarkModeButton from "$lib/components/DarkModeButton.svelte";
+
   import "../app.css";
 </script>
 
-<main
-  class="bg-white text-base subpixel-antialiased dark:bg-gray-950 min-h-screen"
->
+<main>
+  <div class="container mx-auto px-8 py-4 text-right">
+    <DarkModeButton />
+  </div>
   <slot />
 </main>
