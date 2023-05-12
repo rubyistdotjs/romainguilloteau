@@ -1,6 +1,6 @@
 <script lang="ts">
+  import LinkIcon from "svelte-feather-icons/src/icons/LinkIcon.svelte";
   import { differenceInCalendarMonths } from "date-fns";
-  import { LinkIcon } from "svelte-feather-icons";
 
   type Job = {
     company: string;

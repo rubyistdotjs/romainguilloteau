@@ -1,6 +1,6 @@
 <script lang="ts">
   import { PUBLIC_GOODREADS_USER_ID } from "$env/static/public";
-  import { ExternalLinkIcon } from "svelte-feather-icons";
+  import ExternalLinkIcon from "svelte-feather-icons/src/icons/ExternalLinkIcon.svelte";
   import Book from "./Book.svelte";
 
   export let shelfName: string;

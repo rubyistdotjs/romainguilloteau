@@ -1,6 +1,7 @@
 <script lang="ts">
   import { browser } from "$app/environment";
-  import { SunIcon, MoonIcon } from "svelte-feather-icons";
+  import SunIcon from "svelte-feather-icons/src/icons/SunIcon.svelte";
+  import MoonIcon from "svelte-feather-icons/src/icons/MoonIcon.svelte";
 
   let darkMode = initialValue();
 
