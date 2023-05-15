@@ -6,7 +6,7 @@
   $: shortTitle = shortenTitle(title);
 
   function shortenTitle(name: string) {
-    return title.split(":")[0];
+    return name.split(":")[0];
   }
 </script>
 
