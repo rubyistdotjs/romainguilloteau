@@ -1,18 +1,13 @@
 <script lang="ts">
+  import { MetaTags } from "svelte-meta-tags";
+
   import Button from "$lib/components/Button.svelte";
   import Section from "$lib/components/Section.svelte";
 
   import { page } from "$app/stores";
 </script>
 
-<svelte:head>
-  {#if $page.status === 404}
-    <title>Page not found</title>
-  {:else}
-    <title>Oops</title>
-  {/if}
-  <meta name="robots" content="none" />
-</svelte:head>
+<MetaTags title={$page.status === 404 ? "Page not found" : "Oops"} noindex />
 
 <Section>
   <h1
