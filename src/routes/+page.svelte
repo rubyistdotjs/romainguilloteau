@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { MetaTags, JsonLd } from "svelte-meta-tags";
   import Hero from "$lib/components/Hero.svelte";
   import Experiences from "$lib/components/experiences/Experiences.svelte";
   import Stacks from "$lib/components/Stacks.svelte";
@@ -9,58 +10,59 @@
   export let data: PageData;
 </script>
 
-<svelte:head>
-  <title>Romain Guilloteau - Senior Full Stack Engineer</title>
-  <meta
-    name="description"
-    content="I'm a software engineer with more than a decade of professional experience, specialized in Ruby, Go and JavaScript, currently based in Lille France."
-  />
-  <meta property="og:url" content="https://romainguilloteau.dev" />
-  <meta property="og:type" content="profile" />
-  <meta property="profile:first_name" content="Romain" />
-  <meta property="profile:last_name" content="Guilloteau" />
-  <meta property="og:image" content="https://romainguilloteau.dev/avatar.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="920" />
-  <meta property="og:image:height" content="920" />
-  <meta property="og:image:user_generated" content="false" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Romain Guilloteau" />
-  <meta
-    name="twitter:description"
-    content="Senior software engineer specialized in Ruby, Go and JavaScript."
-  />
-  <meta
-    name="twitter:image"
-    content="https://romainguilloteau.dev/avatar.jpg"
-  />
-  <link rel="canonical" href="https://romainguilloteau.dev" />
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "Person",
-      "name": "Romain Guilloteau",
-      "givenName": "Romain",
-      "familyName": "Guilloteau",
-      "image": "https://romainguilloteau.dev/avatar.jpg",
-      "jobTitle": "Senior Full Stack Engineer",
-      "description": "Software engineer specialized in Ruby, Go and JavaScript.",
-      "gender": "Male",
-      "nationality": "FR",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "FR",
-        "addressLocality": "Lille",
-        "postalCode": "59000"
+<MetaTags
+  title="Romain Guilloteau - Senior Full Stack Engineer"
+  description="I'm a software engineer with more than a decade of professional experience, specialized in Ruby, Go and JavaScript, currently based in Lille France."
+  canonical="https://romainguilloteau.dev"
+  openGraph={{
+    url: "https://romainguilloteau.dev",
+    type: "profile",
+    profile: { firstName: "Romain", lastName: "Guilloteau" },
+    images: [
+      {
+        url: "https://romainguilloteau.dev/avatar.jpg",
+        width: 920,
+        height: 920,
+        alt: "Close-up photo of Romain Guilloteau",
       },
-      "url": "https://romainguilloteau.dev",
-      "sameAs": [
-        "https://www.linkedin.com/in/romainguilloteau",
-        "https://github.com/rubyistdotjs"
-      ]
-    }
-  </script>
-</svelte:head>
+    ],
+  }}
+  twitter={{
+    site: "@rubyistdotjs",
+    cardType: "summary",
+    title: "Romain Guilloteau",
+    description:
+      "Senior software engineer specialized in Ruby, Go and JavaScript.",
+    image: "https://romainguilloteau.dev/avatar.jpg",
+    imageAlt: "Close-up photo of Romain Guilloteau",
+  }}
+/>
+
+<JsonLd
+  schema={{
+    "@type": "Person",
+    name: "Romain Guilloteau",
+    givenName: "Romain",
+    familyName: "Guilloteau",
+    image: "https://romainguilloteau.dev/avatar.jpg",
+    jobTitle: "Senior Full Stack Engineer",
+    description: "Software engineer specialized in Ruby, Go and JavaScript.",
+    gender: "Male",
+    nationality: "FR",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "FR",
+      addressLocality: "Lille",
+      postalCode: "59000",
+    },
+    url: "https://romainguilloteau.dev",
+    sameAs: [
+      "https://www.linkedin.com/in/romainguilloteau",
+      "https://github.com/rubyistdotjs",
+      "https://twitter.com/rubyistdotjs",
+    ],
+  }}
+/>
 
 <Hero />
 <Experiences />
