@@ -32,18 +32,18 @@
   <button
     type="button"
     title="Switch to light mode"
-    class="text-gray-400 p-3 rounded-full transition-colors duration-150 ease-in-out hover:text-yellow-100 hover:bg-yellow-950"
+    class="btn btn-sm btn-indigo"
     on:click={switchToLight}
   >
-    <SunIcon size="20" />
+    <MoonIcon size="20" />
   </button>
 {:else}
   <button
     type="button"
     title="Switch to dark mode"
-    class="text-gray-500 p-3 rounded-full transition-colors duration-150 ease-in-out hover:text-indigo-600 hover:bg-indigo-100"
+    class="btn btn-sm btn-yellow"
     on:click={switchToDark}
   >
-    <MoonIcon size="20" />
+    <SunIcon size="20" />
   </button>
 {/if}

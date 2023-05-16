@@ -3,7 +3,7 @@
   import LinkedinIcon from "svelte-feather-icons/src/icons/LinkedinIcon.svelte";
 
   import Section from "./Section.svelte";
-  import Button from "./Button.svelte";
+  import ButtonLink from "./ButtonLink.svelte";
   import ButtonGroup from "./ButtonGroup.svelte";
 </script>
 
@@ -28,18 +28,18 @@
       of the trade.
     </p>
     <ButtonGroup>
-      <Button
+      <ButtonLink
         href="https://github.com/rubyistdotjs"
         title="Visit my Github profile"
       >
         <GithubIcon size="20" />
-      </Button>
-      <Button
+      </ButtonLink>
+      <ButtonLink
         href="https://www.linkedin.com/in/romainguilloteau/"
         title="Visit my LinkedIn profile"
       >
         <LinkedinIcon size="20" />
-      </Button>
+      </ButtonLink>
     </ButtonGroup>
   </div>
 </Section>

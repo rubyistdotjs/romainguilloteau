@@ -1,7 +1,7 @@
 <script lang="ts">
   import { MetaTags } from "svelte-meta-tags";
 
-  import Button from "$lib/components/Button.svelte";
+  import ButtonLink from "$lib/components/ButtonLink.svelte";
   import Section from "$lib/components/Section.svelte";
 
   import { page } from "$app/stores";
@@ -26,5 +26,5 @@
       Something horribly wrong happened, refreshing the page might help 🤷.
     {/if}
   </p>
-  <Button href="/">Go to the home page</Button>
+  <ButtonLink href="/">Go to the home page</ButtonLink>
 </Section>
