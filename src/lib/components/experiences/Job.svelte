@@ -65,7 +65,7 @@
       href={job.url}
       title={`Visit ${job.company}'s website`}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
       class="text-gray-500 dark:text-gray-400 text-sm hover:text-indigo-600 dark:hover:text-indigo-500"
     >
       <LinkIcon size="14" class="inline-block mr-1" />
