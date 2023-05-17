@@ -1,9 +1,9 @@
 import { PUBLIC_GOODREADS_SHELVES } from "$env/static/public";
-import retrieveShelves from "$lib/services/goodreads/shelves";
-import retrieveShelfBooks from "$lib/services/goodreads/books";
+import retrieveShelves from "$lib/server/goodreads/shelves";
+import retrieveShelfBooks from "$lib/server/goodreads/books";
 
 import type { PageServerLoad } from "./$types";
-import type { Shelf } from "$lib/services/goodreads/shelves";
+import type { Shelf } from "$lib/server/goodreads/shelves";
 
 export const load = (async () => {
   const shelves = await retrieveShelves();
