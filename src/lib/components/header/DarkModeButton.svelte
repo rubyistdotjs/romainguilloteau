@@ -1,49 +1,18 @@
 <script lang="ts">
-  import { browser } from "$app/environment";
   import SunIcon from "svelte-feather-icons/src/icons/SunIcon.svelte";
   import MoonIcon from "svelte-feather-icons/src/icons/MoonIcon.svelte";
-
-  let darkMode = initialValue();
-
-  function initialValue() {
-    if (!browser) return true;
-
-    return (
-      localStorage.theme === "dark" ||
-      (localStorage.theme === undefined &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    );
-  }
-
-  function switchToLight() {
-    darkMode = false;
-    document.documentElement.classList.remove("dark");
-    localStorage.theme = "light";
-  }
-
-  function switchToDark() {
-    darkMode = true;
-    document.documentElement.classList.add("dark");
-    localStorage.theme = "dark";
-  }
+  import { themeDark, toggleTheme } from "$lib/stores/theme";
 </script>
 
-{#if darkMode}
-  <button
-    type="button"
-    title="Switch to light mode"
-    class="btn btn-sm btn-indigo"
-    on:click={switchToLight}
-  >
+<button
+  type="button"
+  title={$themeDark ? "Switch to light mode" : "Switch to dark mode"}
+  class={`btn btn-sm ${$themeDark ? "btn-indigo" : "btn-yellow"}`}
+  on:click={toggleTheme}
+>
+  {#if $themeDark}
     <MoonIcon size="20" />
-  </button>
-{:else}
-  <button
-    type="button"
-    title="Switch to dark mode"
-    class="btn btn-sm btn-yellow"
-    on:click={switchToDark}
-  >
+  {:else}
     <SunIcon size="20" />
-  </button>
-{/if}
+  {/if}
+</button>
