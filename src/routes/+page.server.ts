@@ -5,6 +5,8 @@ import retrieveShelfBooks from "$lib/server/goodreads/books";
 import type { PageServerLoad } from "./$types";
 import type { Shelf } from "$lib/server/goodreads/shelves";
 
+export const prerender = true;
+
 export const load = (async () => {
   const shelves = await retrieveShelves();
   const filteredShelves = PUBLIC_GOODREADS_SHELVES.split(",")
