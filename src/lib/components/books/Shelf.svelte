@@ -1,9 +1,10 @@
 <script lang="ts">
   import Book from "./Book.svelte";
+  import type { Book as BookType } from "./books.type";
 
   export let shelfName: string;
   export let booksCount: string;
-  export let books: [any];
+  export let books: BookType[];
 
   $: title = shelfTitle(shelfName);
   $: booksOverflow = computeBooksOverflow(booksCount, books.length);

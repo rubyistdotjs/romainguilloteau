@@ -2,21 +2,21 @@ import { PUBLIC_GOODREADS_USER_ID } from "$env/static/public";
 
 import { retrieve } from "./api";
 
-interface GoodreadsReviews {
+type GoodreadsReviews = {
   reviews: {
     review: GoodreadsReview | GoodreadsReview[];
   };
-}
+};
 
-interface GoodreadsReview {
+type GoodreadsReview = {
   id: number;
   book: GoodreadsBook;
   rating: number;
   started_at: Date;
   read_at: Date;
-}
+};
 
-interface GoodreadsBook {
+type GoodreadsBook = {
   id: number;
   title: string;
   title_without_series: string;
@@ -30,23 +30,23 @@ interface GoodreadsBook {
   authors: {
     author: GoodreadsAuthor | GoodreadsAuthor[];
   };
-}
+};
 
-interface GoodreadsAuthor {
+type GoodreadsAuthor = {
   id: number;
   name: string;
   image: string;
   small_image_url: string;
   link: string;
-}
+};
 
-export interface Book {
+export type Book = {
   id: number;
   coverUrl: string;
   title: string;
   author: string;
   link: string;
-}
+};
 
 const formatBook = (review: GoodreadsReview): Book => {
   const { book } = review;

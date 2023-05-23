@@ -3,8 +3,9 @@
 
   import Section from "../Section.svelte";
   import Shelf from "./Shelf.svelte";
+  import type { Shelf as ShelfType } from "./books.type";
 
-  export let shelves: any;
+  export let shelves: ShelfType[];
 </script>
 
 <Section title="Book shelves">
