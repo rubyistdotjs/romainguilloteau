@@ -1,6 +1,7 @@
 {
-  "name": "romainguilloteau-2022",
-  "version": "0.0.1",
+  "name": "romainguilloteau",
+  "version": "3.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
