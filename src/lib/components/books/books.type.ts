@@ -6,6 +6,6 @@ export type Book = {
 
 export type Shelf = {
   shelfName: string;
-  booksCount: string;
+  booksCount: number;
   books: Book[];
 };

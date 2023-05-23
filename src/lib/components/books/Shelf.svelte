@@ -3,11 +3,11 @@
   import type { Book as BookType } from "./books.type";
 
   export let shelfName: string;
-  export let booksCount: string;
+  export let booksCount: number;
   export let books: BookType[];
 
   $: title = shelfTitle(shelfName);
-  $: booksOverflow = computeBooksOverflow(booksCount, books.length);
+  $: booksOverflow = booksCount - books.length;
 
   function shelfTitle(name: string) {
     return name === "currently-reading"
@@ -15,10 +15,6 @@
       : name === "to-read"
       ? "Wishlist"
       : "Read";
-  }
-
-  function computeBooksOverflow(total: string, displayed: number) {
-    return parseInt(total, 10) - displayed;
   }
 </script>
 
