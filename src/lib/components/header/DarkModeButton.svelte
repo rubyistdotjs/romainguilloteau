@@ -6,7 +6,7 @@
 
 <button
   type="button"
-  title={$themeDark ? "Switch to light mode" : "Switch to dark mode"}
+  title={`Switch to ${$themeDark ? "light" : "dark"} mode`}
   class={`btn btn-sm ${$themeDark ? "btn-indigo" : "btn-yellow"}`}
   on:click={toggleTheme}
 >
