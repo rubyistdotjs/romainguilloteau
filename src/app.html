@@ -33,14 +33,16 @@
       crossorigin
     />
     %sveltekit.head%
-    <script type="module">
-      const theme =
-        localStorage.theme ||
-        (window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light");
-      if (theme === "dark") document.documentElement.classList.add(theme);
-      if (!localStorage.theme) localStorage.theme = theme;
+    <script>
+      (() => {
+        const theme =
+          localStorage.theme ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light");
+        if (theme === "dark") document.documentElement.classList.add(theme);
+        if (!localStorage.theme) localStorage.theme = theme;
+      })();
     </script>
   </head>
   <body>
