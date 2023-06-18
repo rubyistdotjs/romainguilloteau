@@ -8,15 +8,17 @@ const config = {
     adapter: adapter(),
     csp: {
       directives: {
-        "default-src": ["self"],
+        "default-src": ["none"],
+        "base-uri": ["self"],
+        "frame-ancestors": ["none"],
+        "font-src": ["https://fonts.gstatic.com/"],
+        "img-src": ["self", "data:", "https://*.gr-assets.com/"],
+        "style-src": ["self"],
         "script-src": [
           "self",
           "sha256-+TaXqbaR7/hcKtLGLM1esquzVwTrvPtpUKNMXIiO58M=",
           "https://tableau.abla.io/abla.js",
         ],
-        "img-src": ["self", "data:", "https://*.gr-assets.com/"],
-        "font-src": ["https://fonts.gstatic.com/"],
-        "frame-ancestors": ["none"],
       },
     },
   },
