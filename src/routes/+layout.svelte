@@ -11,7 +11,7 @@
       async
       defer
       data-website-id={PUBLIC_ABLA_WEBSITE_ID}
-      src="https://tableau.abla.io/abla.js"
+      src="https://s.abla.io/abla.js"
     ></script>
   {/if}
 </svelte:head>
