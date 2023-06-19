@@ -10,7 +10,6 @@ const config = {
       directives: {
         "default-src": ["none"],
         "base-uri": ["self"],
-        "frame-ancestors": ["none"],
         "font-src": ["https://fonts.gstatic.com/"],
         "img-src": ["self", "data:", "https://*.gr-assets.com/"],
         "style-src": ["self"],
