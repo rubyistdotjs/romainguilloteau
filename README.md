@@ -1,38 +1,36 @@
-# create-svelte
+# Personal Website (2023-...)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+The new version of my humble personal website, which you can visit here: https://romainguilloteau.dev/. For now there is not a lot to see. I might start a blog, build a mini-game, add my pilot logbook, but most likely it will stay as-is.
 
-## Creating a project
+I started to feel ashamed of my [former website](https://github.com/rubyistdotjs/romainguilloteau-2018-2022) and this was a perfect excuse to try Svelte (with SvelteKit).
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Setup
 
-```bash
-# create a new project in the current directory
-npm init svelte
+The only thing required is Node 16 or higher.
 
-# create a new project in my-app
-npm init svelte my-app
+First clone the repository and `cd` into it:
+
+```sh
+git clone git@github.com:rubyistdotjs/romainguilloteau.git
+cd romainguilloteau
 ```
 
-## Developing
+Then install the dependencies:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```sh
+npm install
+```
 
-```bash
-npm run dev
+create the .env using the example:
 
-# or start the server and open the app in a new browser tab
+```sh
+cp .env.example .env
+```
+
+_The only required variable is `GOODREADS_API_KEY`. If you don't have one, Goodreads no longer issues them so..._
+
+Finally, you can launch the website with:
+
+```sh
 npm run dev -- --open
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
