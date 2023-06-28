@@ -44,7 +44,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-base subpixel-antialiased dark:bg-gray-950;
+    @apply bg-gray-50 text-base subpixel-antialiased dark:bg-gray-950;
   }
 }
 

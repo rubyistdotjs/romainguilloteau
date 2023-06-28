@@ -14,7 +14,7 @@
       <Shelf {...shelf} />
     {/each}
   </div>
-  <p class="text-sm text-gray-500 mt-16">
+  <p class="text-sm text-gray-500 dark:text-gray-400 mt-16">
     Data retrieved using the Goodreads API,
     <a
       href={`https://www.goodreads.com/user/show/${PUBLIC_GOODREADS_USER_ID}`}
