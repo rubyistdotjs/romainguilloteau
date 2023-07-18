@@ -16,6 +16,7 @@
       src={coverUrl}
       alt={`Cover of the book "${shortTitle}"`}
       class="w-full h-auto rounded"
+      loading="lazy"
     />
   </div>
   <div>
