@@ -4,3 +4,9 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
+
+/*.woff2
+  Cache-Control: public, max-age=7776000
+
+/*.webp
+  Cache-Control: public, max-age=604800
