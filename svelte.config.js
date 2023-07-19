@@ -11,7 +11,7 @@ const config = {
         "default-src": ["none"],
         "base-uri": ["self"],
         "connect-src": ["self", "https://s.abla.io/api/collect"],
-        "font-src": ["https://fonts.gstatic.com/"],
+        "font-src": ["self"],
         "img-src": ["self", "data:", "https://*.gr-assets.com/"],
         "style-src": ["self"],
         "script-src": [
