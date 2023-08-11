@@ -10,14 +10,13 @@ const config = {
       directives: {
         "default-src": ["none"],
         "base-uri": ["self"],
-        "connect-src": ["self", "https://s.abla.io/api/collect"],
+        "connect-src": ["self"],
         "font-src": ["self"],
         "img-src": ["self", "data:", "https://*.gr-assets.com/"],
         "style-src": ["self"],
         "script-src": [
           "self",
           "sha256-+TaXqbaR7/hcKtLGLM1esquzVwTrvPtpUKNMXIiO58M=",
-          "https://s.abla.io/abla.js",
         ],
       },
     },
