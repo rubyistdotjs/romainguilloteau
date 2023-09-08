@@ -7,7 +7,10 @@
   import { page } from "$app/stores";
 </script>
 
-<MetaTags title={$page.status === 404 ? "Page not found" : "Oops"} noindex />
+<MetaTags
+  title={$page.status === 404 ? "Page not found" : "Oops"}
+  robots="noindex"
+/>
 
 <Section>
   <h1
