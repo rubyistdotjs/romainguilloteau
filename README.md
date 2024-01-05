@@ -6,7 +6,7 @@ I started to feel ashamed of my [former website](https://github.com/rubyistdotjs
 
 ## Setup
 
-The only thing required is Node 16 or higher.
+The only thing required is Node 18 or higher.
 
 First clone the repository and `cd` into it:
 

@@ -13,8 +13,8 @@
     return name === "currently-reading"
       ? "Reading"
       : name === "to-read"
-      ? "Wishlist"
-      : "Read";
+        ? "Wishlist"
+        : "Read";
   }
 </script>
 
