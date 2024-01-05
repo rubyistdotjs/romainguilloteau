@@ -1,6 +1,5 @@
 <script lang="ts">
-  import GithubIcon from "lucide-svelte/dist/svelte/icons/github.svelte";
-  import LinkedinIcon from "lucide-svelte/dist/svelte/icons/linkedin.svelte";
+  import { GithubIcon, LinkedinIcon } from "lucide-svelte";
 
   import Section from "./Section.svelte";
   import ButtonLink from "./ButtonLink.svelte";
