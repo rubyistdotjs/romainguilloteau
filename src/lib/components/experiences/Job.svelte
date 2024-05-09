@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { LinkIcon } from "lucide-svelte";
+  import LinkIcon from "lucide-svelte/icons/link";
   import { differenceInCalendarMonths } from "date-fns";
 
   type Job = {

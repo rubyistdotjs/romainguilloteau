@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { SunIcon, MoonIcon } from "lucide-svelte";
+  import SunIcon from "lucide-svelte/icons/sun";
+  import MoonIcon from "lucide-svelte/icons/moon";
   import { themeDark, toggleTheme } from "$lib/stores/theme";
 </script>
 
