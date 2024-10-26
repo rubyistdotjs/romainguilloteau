@@ -9,6 +9,12 @@ const config = {
     csp: {
       directives: {
         "default-src": ["none"],
+        "base-uri": ["self"],
+        "connect-src": ["self"],
+        "font-src": ["self"],
+        "form-action": ["none"],
+        "img-src": ["self", "data:", "https://*.gr-assets.com/"],
+        "style-src": ["self"],
         "script-src": [
           "self",
           "sha256-+TaXqbaR7/hcKtLGLM1esquzVwTrvPtpUKNMXIiO58M=",
