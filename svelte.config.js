@@ -12,6 +12,7 @@ const config = {
         "base-uri": ["self"],
         "connect-src": ["self"],
         "font-src": ["self"],
+        "form-action": ["none"],
         "img-src": ["self", "data:", "https://*.gr-assets.com/"],
         "style-src": ["self"],
         "script-src": [
