@@ -6,15 +6,6 @@ const config = {
   preprocess: vitePreprocess({ preserve: ["ld+json"] }),
   kit: {
     adapter: adapter(),
-    csp: {
-      directives: {
-        // See the _headers file for more CSP directives
-        "script-src": [
-          "self",
-          "sha256-+TaXqbaR7/hcKtLGLM1esquzVwTrvPtpUKNMXIiO58M=",
-        ],
-      },
-    },
   },
 };
 
