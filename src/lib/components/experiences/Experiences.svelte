@@ -6,7 +6,7 @@
 </script>
 
 <Section title="Experiences">
-  <div class="grid grid-cols-1 xl:grid-cols-2 gap-16">
+  <div class="grid grid-cols-1 gap-16 xl:grid-cols-2">
     {#each jobs as job}
       <Job {job} />
     {/each}

@@ -1,27 +1,25 @@
 <script lang="ts">
-  export let title: string;
-  export let author: string;
-  export let coverUrl: string;
+  let {
+    title,
+    author,
+    coverUrl,
+  }: { title: string; author: string; coverUrl: string } = $props();
 
-  $: shortTitle = shortenTitle(title);
-
-  function shortenTitle(name: string) {
-    return name.split(":")[0];
-  }
+  const shortTitle = $derived(title.split(":")[0]);
 </script>
 
-<div class="flex flex-row mb-6">
-  <div class="w-12 h-full mr-3 flex-shrink-0">
+<div class="mb-6 flex flex-row">
+  <div class="mr-3 h-full w-12 shrink-0">
     <img
       src={coverUrl}
       alt={`Cover of the book "${shortTitle}"`}
-      class="w-full h-auto rounded"
+      class="h-auto w-full rounded"
       loading="lazy"
     />
   </div>
   <div>
     <h4
-      class="text-gray-800 dark:text-gray-100 font-semibold leading-snug line-clamp-1"
+      class="line-clamp-1 leading-snug font-semibold text-gray-800 dark:text-gray-100"
     >
       {shortTitle}
     </h4>

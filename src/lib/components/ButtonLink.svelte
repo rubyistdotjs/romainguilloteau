@@ -1,6 +1,5 @@
 <script lang="ts">
-  export let href: string;
-  export let title: string | null = null;
+  let { href, title = null }: { href: string; title: string | null } = $props();
 </script>
 
 <a

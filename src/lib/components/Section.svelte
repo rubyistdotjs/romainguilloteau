@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let title: string | null = null;
+  let { title = null }: { title: string | null } = $props();
 </script>
 
 <section
@@ -7,7 +7,7 @@
 >
   {#if title}
     <h2
-      class="text-2xl md:text-4xl text-gray-900 dark:text-gray-50 font-semibold mb-12 md:mb-20"
+      class="mb-12 text-2xl font-semibold text-gray-900 md:mb-20 md:text-4xl dark:text-gray-50"
     >
       {title}
     </h2>

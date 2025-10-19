@@ -4,9 +4,9 @@
 </script>
 
 <header
-  class="container mx-auto px-8 py-5 flex flex-row justify-between items-center"
+  class="container mx-auto flex flex-row items-center justify-between px-8 py-5"
 >
-  <div class="w-10 h-10 mr-10 rounded-full grayscale overflow-hidden">
+  <div class="mr-10 h-10 w-10 overflow-hidden rounded-full grayscale">
     <img src={mugshotSrc} alt="Close-up of Romain Guilloteau" />
   </div>
   <div>

@@ -8,7 +8,7 @@
   type="button"
   title={`Switch to ${$themeDark ? "light" : "dark"} mode`}
   class={`btn btn-sm ${$themeDark ? "btn-indigo" : "btn-yellow"}`}
-  on:click={toggleTheme}
+  onclick={toggleTheme}
 >
   {#if $themeDark}
     <MoonIcon size="20" />
