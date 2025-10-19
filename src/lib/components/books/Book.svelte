@@ -1,9 +1,11 @@
 <script lang="ts">
-  let {
-    title,
-    author,
-    coverUrl,
-  }: { title: string; author: string; coverUrl: string } = $props();
+  interface Props {
+    title: string;
+    author: string;
+    coverUrl: string;
+  }
+
+  let { title, author, coverUrl }: Props = $props();
 
   const shortTitle = $derived(title.split(":")[0]);
 </script>

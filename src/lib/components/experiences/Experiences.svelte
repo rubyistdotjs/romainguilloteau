@@ -7,7 +7,7 @@
 
 <Section title="Experiences">
   <div class="grid grid-cols-1 gap-16 xl:grid-cols-2">
-    {#each jobs as job}
+    {#each jobs as job (job.slug)}
       <Job {job} />
     {/each}
   </div>

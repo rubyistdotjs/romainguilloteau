@@ -1,5 +1,12 @@
 <script lang="ts">
-  let { title = null }: { title: string | null } = $props();
+  import type { Snippet } from "svelte";
+
+  interface Props {
+    title?: string | null;
+    children: Snippet;
+  }
+
+  let { title = null, children }: Props = $props();
 </script>
 
 <section
@@ -12,5 +19,6 @@
       {title}
     </h2>
   {/if}
-  <slot />
+
+  {@render children()}
 </section>

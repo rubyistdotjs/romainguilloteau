@@ -11,9 +11,11 @@ export function toggleTheme() {
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     localStorage.theme = newTheme;
 
-    newTheme === "dark"
-      ? document.documentElement.classList.add("dark")
-      : document.documentElement.classList.remove("dark");
+    if (newTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
 
     return newTheme;
   });

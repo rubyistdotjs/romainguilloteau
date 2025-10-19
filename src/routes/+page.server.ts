@@ -16,7 +16,12 @@ export const load = (async () => {
   const shelvesWithBooks = await Promise.all(
     filteredShelves.map(async (shelf) => {
       const books = await retrieveShelfBooks({ shelf: shelf.name });
-      return { shelfName: shelf.name, booksCount: shelf.book_count, books };
+      return {
+        id: shelf.id,
+        name: shelf.name,
+        booksCount: shelf.book_count,
+        books,
+      };
     }),
   );
 

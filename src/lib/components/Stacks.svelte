@@ -5,7 +5,7 @@
 </script>
 
 <Section title="Stack">
-  {#each stacks as stack}
+  {#each stacks as stack (stack.slug)}
     <div class="mb-16 border-l border-gray-100 pl-6 dark:border-gray-900">
       <div class="grid grid-cols-1 md:grid-cols-4">
         <h3
@@ -14,7 +14,7 @@
           {stack.name}
         </h3>
         <ul class="space-y-8 md:col-span-3">
-          {#each stack.entries as entry}
+          {#each stack.entries as entry (entry.slug)}
             <li>
               <h4
                 class="mb-2 leading-none font-semibold text-gray-800 dark:text-gray-100"

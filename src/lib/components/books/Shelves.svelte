@@ -5,13 +5,21 @@
   import Shelf from "./Shelf.svelte";
   import type { Shelf as ShelfType } from "./books.type";
 
-  let { shelves }: { shelves: ShelfType[] } = $props();
+  interface Props {
+    shelves: ShelfType[];
+  }
+
+  let { shelves }: Props = $props();
 </script>
 
 <Section title="Book shelves">
   <div class="grid grid-cols-1 gap-14 xl:grid-cols-3">
-    {#each shelves as shelf}
-      <Shelf {...shelf} />
+    {#each shelves as shelf (shelf.id)}
+      <Shelf
+        name={shelf.name}
+        booksCount={shelf.booksCount}
+        books={shelf.books}
+      />
     {/each}
   </div>
   <p class="mt-16 text-sm text-gray-500 dark:text-gray-400">

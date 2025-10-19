@@ -2,6 +2,10 @@
   import LinkIcon from "lucide-svelte/icons/link";
   import { differenceInCalendarMonths } from "date-fns";
 
+  interface Props {
+    job: Job;
+  }
+
   type Job = {
     company: string;
     logo: string;
@@ -12,7 +16,7 @@
     summary: string;
   };
 
-  let { job }: { job: Job } = $props();
+  let { job }: Props = $props();
 
   const yearsCount = $derived(yearsDiff(job.startDate, job.endDate));
   const domain = $derived(urlDomain(job.url));

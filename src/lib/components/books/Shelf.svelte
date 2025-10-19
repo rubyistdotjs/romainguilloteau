@@ -2,13 +2,15 @@
   import Book from "./Book.svelte";
   import type { Book as BookType } from "./books.type";
 
-  let {
-    shelfName,
-    booksCount,
-    books,
-  }: { shelfName: string; booksCount: number; books: BookType[] } = $props();
+  interface Props {
+    name: string;
+    booksCount: number;
+    books: BookType[];
+  }
 
-  const title = $derived(shelfTitle(shelfName));
+  let { name, booksCount, books }: Props = $props();
+
+  const title = $derived(shelfTitle(name));
   const booksOverflow = $derived(booksCount - books.length);
 
   function shelfTitle(name: string) {
@@ -25,7 +27,7 @@
     {title}
   </h3>
 
-  {#each books as book}
+  {#each books as book (book.id)}
     <Book title={book.title} author={book.author} coverUrl={book.coverUrl} />
   {/each}
 
