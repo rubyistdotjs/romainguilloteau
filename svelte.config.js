@@ -3,7 +3,19 @@ import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  preprocess: vitePreprocess({ preserve: ["ld+json"] }),
+  preprocess: [
+    vitePreprocess({ preserve: ["ld+json"] }),
+    {
+      name: "strip-announcer",
+      markup: ({ content: code }) => {
+        code = code.replace(
+          /<div id="svelte-announcer" [\s\S]*?<\/div>/,
+          "{null}",
+        );
+        return { code };
+      },
+    },
+  ],
   kit: {
     adapter: adapter(),
     csp: {
@@ -13,7 +25,12 @@ const config = {
         "connect-src": ["self"],
         "font-src": ["self"],
         "form-action": ["none"],
-        "img-src": ["self", "data:", "https://i.gr-assets.com/", "https://s.gr-assets.com/"],
+        "img-src": [
+          "self",
+          "data:",
+          "https://i.gr-assets.com/",
+          "https://s.gr-assets.com/",
+        ],
         "style-src": ["self"],
         "script-src": [
           "self",
