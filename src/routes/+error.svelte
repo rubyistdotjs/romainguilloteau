@@ -4,26 +4,26 @@
   import ButtonLink from "$lib/components/ButtonLink.svelte";
   import Section from "$lib/components/Section.svelte";
 
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
 </script>
 
 <MetaTags
-  title={$page.status === 404 ? "Page not found" : "Oops"}
+  title={page.status === 404 ? "Page not found" : "Oops"}
   robots="noindex"
 />
 
 <Section>
   <h1
-    class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-8 lg:mb-12"
+    class="mb-8 text-3xl font-bold text-gray-900 md:text-5xl lg:mb-12 lg:text-6xl dark:text-gray-50"
   >
-    {#if $page.status === 404}
+    {#if page.status === 404}
       Page not found
     {:else}
       Unexpected error
     {/if}
   </h1>
-  <p class="md:text-lg text-gray-800 dark:text-gray-300 leading-relaxed mb-20">
-    {#if $page.status === 404}
+  <p class="mb-20 leading-relaxed text-gray-800 md:text-lg dark:text-gray-300">
+    {#if page.status === 404}
       The page you are looking for does not seem to exist (anymore?).
     {:else}
       Something horribly wrong happened, refreshing the page might help 🤷.

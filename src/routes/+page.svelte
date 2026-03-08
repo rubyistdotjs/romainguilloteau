@@ -7,7 +7,11 @@
 
   import type { PageData } from "./$types";
 
-  export let data: PageData;
+  interface Props {
+    data: PageData;
+  }
+
+  let { data }: Props = $props();
 </script>
 
 <MetaTags
@@ -59,7 +63,6 @@
     sameAs: [
       "https://www.linkedin.com/in/romainguilloteau",
       "https://github.com/rubyistdotjs",
-      "https://twitter.com/rubyistdotjs",
     ],
   }}
 />

@@ -5,19 +5,19 @@
 </script>
 
 <Section title="Stack">
-  {#each stacks as stack}
-    <div class="border-l border-gray-100 dark:border-gray-900 pl-6 mb-16">
+  {#each stacks as stack (stack.slug)}
+    <div class="mb-16 border-l border-gray-100 pl-6 dark:border-gray-900">
       <div class="grid grid-cols-1 md:grid-cols-4">
         <h3
-          class="text-gray-800 dark:text-gray-100 text-sm font-medium leading-none mb-8"
+          class="mb-8 text-sm leading-none font-medium text-gray-800 dark:text-gray-100"
         >
           {stack.name}
         </h3>
-        <ul class="md:col-span-3 space-y-8">
-          {#each stack.entries as entry}
+        <ul class="space-y-8 md:col-span-3">
+          {#each stack.entries as entry (entry.slug)}
             <li>
               <h4
-                class="font-semibold leading-none text-gray-800 dark:text-gray-100 mb-2"
+                class="mb-2 leading-none font-semibold text-gray-800 dark:text-gray-100"
               >
                 {entry.name}
               </h4>

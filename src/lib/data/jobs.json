@@ -1,5 +1,6 @@
 [
   {
+    "slug": "buyco",
     "company": "BuyCo",
     "logo": "buyco.webp",
     "url": "https://buyco.co/",
@@ -9,6 +10,7 @@
     "summary": "Originally brought in for my expertise on projects architecture, Ruby on Rails and to enforce good practices, I'm now the lead of a team dedicated to the public APIs and shipment tracking."
   },
   {
+    "slug": "swile",
     "company": "Swile",
     "logo": "swile.webp",
     "url": "https://www.swile.co/",
@@ -18,6 +20,7 @@
     "summary": "I worked on the food delivery platform when the company was named Lunchr. When it shifted to a neobank, I moved on the affiliates side and payment networks, of which I became a lead."
   },
   {
+    "slug": "codeur",
     "company": "Codeur",
     "logo": "codeur.webp",
     "url": "https://www.codeur.com/",
@@ -27,6 +30,7 @@
     "summary": "I built Graphiste.com (a designer job board) and Facture.net (an invoicing tool) from the ground up and implemented some major features and rewrites for their other websites."
   },
   {
+    "slug": "1year1book",
     "company": "1Year1Book",
     "logo": "1year1book.webp",
     "url": "https://www.1year1book.com/",

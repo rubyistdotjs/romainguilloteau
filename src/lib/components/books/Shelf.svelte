@@ -2,12 +2,16 @@
   import Book from "./Book.svelte";
   import type { Book as BookType } from "./books.type";
 
-  export let shelfName: string;
-  export let booksCount: number;
-  export let books: BookType[];
+  interface Props {
+    name: string;
+    booksCount: number;
+    books: BookType[];
+  }
 
-  $: title = shelfTitle(shelfName);
-  $: booksOverflow = booksCount - books.length;
+  let { name, booksCount, books }: Props = $props();
+
+  const title = $derived(shelfTitle(name));
+  const booksOverflow = $derived(booksCount - books.length);
 
   function shelfTitle(name: string) {
     return name === "currently-reading"
@@ -19,11 +23,11 @@
 </script>
 
 <div>
-  <h3 class="text-gray-500 dark:text-gray-400 font-medium leading-none mb-8">
+  <h3 class="mb-8 leading-none font-medium text-gray-500 dark:text-gray-400">
     {title}
   </h3>
 
-  {#each books as book}
+  {#each books as book (book.id)}
     <Book title={book.title} author={book.author} coverUrl={book.coverUrl} />
   {/each}
 

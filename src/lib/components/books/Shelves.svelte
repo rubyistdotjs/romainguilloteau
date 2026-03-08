@@ -5,16 +5,24 @@
   import Shelf from "./Shelf.svelte";
   import type { Shelf as ShelfType } from "./books.type";
 
-  export let shelves: ShelfType[];
+  interface Props {
+    shelves: ShelfType[];
+  }
+
+  let { shelves }: Props = $props();
 </script>
 
 <Section title="Book shelves">
-  <div class="grid grid-cols-1 xl:grid-cols-3 gap-14">
-    {#each shelves as shelf}
-      <Shelf {...shelf} />
+  <div class="grid grid-cols-1 gap-14 xl:grid-cols-3">
+    {#each shelves as shelf (shelf.id)}
+      <Shelf
+        name={shelf.name}
+        booksCount={shelf.booksCount}
+        books={shelf.books}
+      />
     {/each}
   </div>
-  <p class="text-sm text-gray-500 dark:text-gray-400 mt-16">
+  <p class="mt-16 text-sm text-gray-500 dark:text-gray-400">
     Data retrieved using the Goodreads API,
     <a
       href={`https://www.goodreads.com/user/show/${PUBLIC_GOODREADS_USER_ID}`}
