@@ -63,7 +63,6 @@
     sameAs: [
       "https://www.linkedin.com/in/romainguilloteau",
       "https://github.com/rubyistdotjs",
-      "https://twitter.com/rubyistdotjs",
     ],
   }}
 />
